@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorWhite"
     android:fitsSystemWindows="true"
     tools:context="com.example.danny.trelaapp.OverviewActivity">
 
@@ -15,16 +16,26 @@
     </android.support.design.widget.AppBarLayout>
 
     <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <include layout="@layout/content_overview" style="@style/MenuButton" />
+
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="500dp">
 
-
-        <include layout="@layout/content_overview" style="@style/MenuButton" />
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="500dp">
-        </RelativeLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Overview"
+            android:id="@+id/textView"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="111dp" />
     </RelativeLayout>
+</RelativeLayout>
 
 </android.support.design.widget.CoordinatorLayout>

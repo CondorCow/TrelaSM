@@ -18,32 +18,36 @@
         android:background="@color/colorAccent"
         android:layout_weight="4">
 
-        <Button style="@style/MenuButton"
+        <ImageButton style="@style/MenuButton"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:text="Overview"
-            android:id="@+id/button"
+            android:src="@drawable/ic_globe_outline"
+            android:id="@+id/btnOverview"
             android:layout_weight="1" />
 
-        <Button style="@style/MenuButton"
+        <ImageButton style="@style/MenuButton"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:text="Artists"
-            android:id="@+id/button2"
+            android:src="@drawable/ic_guitar_outlineicon"
+            android:id="@+id/btnArtists"
             android:layout_weight="1" />
 
-        <Button style="@style/MenuButton"
+        <ImageButton style="@style/MenuButton"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:text="Concerts"
-            android:id="@+id/button3"
+            android:src="@drawable/ic_concert_outline"
+            android:id="@+id/btnConcerts"
             android:layout_weight="1" />
 
-        <Button style="@style/MenuButton"
+        <ImageButton style="@style/MenuButton"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:text="Settings"
-            android:id="@+id/button4"
+            android:src="@drawable/ic_settings_outline"
+            android:id="@+id/btnSettings"
             android:layout_weight="1" />
 
     </LinearLayout>
