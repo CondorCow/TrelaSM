@@ -18,8 +18,13 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <include layout="@layout/content_overview" style="@style/MenuButton" />
-    </RelativeLayout>
 
+        <include layout="@layout/content_overview" style="@style/MenuButton" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="500dp">
+        </RelativeLayout>
+    </RelativeLayout>
 
 </android.support.design.widget.CoordinatorLayout>
