@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.example.danny.trelaapp.EditDistanceActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite">
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/grad1"
+        android:weightSum="1"
+        android:id="@+id/relativeLayout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Edit travel distance"
+            android:id="@+id/textView3"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+
+        <NumberPicker
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/numberPicker"
+            android:layout_marginTop="40dp"
+            android:layout_below="@+id/textView"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Choose travel distance:"
+            android:id="@+id/textView"
+            android:layout_below="@+id/relativeLayout"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="42dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Done"
+            android:layout_margin="3dp"
+            android:id="@+id/btnDoneDistance"
+            android:background="@drawable/grad2"
+            android:layout_below="@+id/numberPicker"
+            android:layout_toRightOf="@+id/btnCancel"
+            android:layout_toEndOf="@+id/btnCancel" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="*Select a value (in km) you&apos;re willing to travel to a concert. Only concerts within your chosen range wil be displayed in the overview sceen."
+            android:id="@+id/textView4"
+            android:layout_below="@+id/btnDoneDistance"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancel"
+            android:layout_margin="3dp"
+            android:background="@drawable/grad2"
+            android:id="@+id/btnCancel"
+            android:layout_below="@+id/numberPicker"
+            android:layout_alignLeft="@+id/textView"
+            android:layout_alignStart="@+id/textView" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="(scroll or tick to edit)"
+            android:id="@+id/textView2"
+            android:layout_below="@+id/textView"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>

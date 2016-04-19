@@ -24,19 +24,72 @@
 
         <include layout="@layout/content_overview" style="@style/MenuButton" />
 
+
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="500dp">
+
+            <RelativeLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/grad1"
+            android:weightSum="1"
+            android:id="@+id/relativeLayout">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="Artists"
+                android:text="Following Artists"
                 android:id="@+id/textView3"
-                android:layout_alignParentTop="true"
-                android:layout_centerHorizontal="true"
-                android:layout_marginTop="114dp" />
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true" />
+
+            <Button style="@style/MenuButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+"
+                android:textSize="40sp"
+                android:id="@+id/btnAddArtist"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"/>
+        </RelativeLayout>
+
+            <ListView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/listView"
+                android:layout_below="@+id/relativeLayout"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:id="@+id/arrow"
+                android:src="@drawable/ic_arrow_1"
+                android:visibility="invisible"
+                android:layout_alignTop="@+id/listView"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="37dp"
+                android:layout_marginEnd="37dp"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:layout_width="230dp"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:visibility="invisible"
+                android:gravity="center"
+                android:textSize="25dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="You&apos;re not following any artists yet! Click here to add artists!"
+                android:id="@+id/txtEmpty"
+                android:layout_below="@+id/arrow" />
+
         </RelativeLayout>
     </RelativeLayout>
 

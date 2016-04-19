@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="settingsmenu">
+        <item >Change profile picture</item>
+        <item >Edit traveling distance</item>
+        <item >Notifications</item>
+        <item >Tell a friend</item>
+    </string-array>
+
+</resources>

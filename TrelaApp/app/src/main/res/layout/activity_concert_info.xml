@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.example.danny.trelaapp.ConcertInfoActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/grad1"
+        android:weightSum="1"
+        android:id="@+id/relativeLayout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Concert"
+            android:id="@+id/txtArtist"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="404 error"
+            android:id="@+id/txtConcertName"
+            android:layout_marginTop="35dp"
+            android:layout_below="@+id/relativeLayout"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:id="@+id/scrollView"
+            android:layout_below="@+id/txtConcertName"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="404 error"
+                android:id="@+id/txtConcertInfo"
+                android:layout_below="@+id/txtConcertName" />
+        </ScrollView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="20dp"
+            android:layout_below="@+id/scrollView"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="error"
+                android:id="@+id/txtGoingOrNot"
+                android:layout_below="@+id/txtDate"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="36dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Date: "
+                android:id="@+id/txtDate"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:layout_below="@+id/txtGoingOrNot"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true">
+
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_weight="0.5"
+                android:text="Back"
+                android:textSize="17sp"
+                android:background="@drawable/grad2"
+                android:id="@+id/btnBackConcert"
+                android:layout_marginRight="53dp"
+                android:layout_alignTop="@+id/btnGoingCancel"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="53dp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="fail"
+                android:layout_weight="0.5"
+                android:textSize="17sp"
+                android:id="@+id/btnGoingCancel"
+                android:background="@drawable/grad2"
+                android:layout_marginBottom="65dp"
+                android:layout_alignParentBottom="true"/>
+            </LinearLayout>
+
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>

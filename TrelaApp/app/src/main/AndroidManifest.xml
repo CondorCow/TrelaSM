@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.danny.trelaapp">
+    <uses-feature android:name="android.hardware.camera2"></uses-feature>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
 
     <application
         android:allowBackup="true"
@@ -33,7 +35,19 @@
         <activity
             android:name=".SettingsActivity"
             android:label="@string/title_activity_settings"
-            android:theme="@style/noAnimTheme"></activity>
+            android:theme="@style/noAnimTheme" />
+        <activity
+            android:name=".AddArtistActivity"
+            android:label="@string/title_activity_add_artist"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".EditDistanceActivity"
+            android:label="@string/title_activity_edit_distance"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ConcertInfoActivity"
+            android:label="@string/title_activity_concert_info"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>

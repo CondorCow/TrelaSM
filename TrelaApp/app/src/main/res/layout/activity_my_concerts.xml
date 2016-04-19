@@ -8,34 +8,56 @@
     android:fitsSystemWindows="true"
     tools:context="com.example.danny.trelaapp.MyConcertsActivity">
 
-    <android.support.design.widget.AppBarLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:theme="@style/AppTheme.AppBarOverlay">
-
-    </android.support.design.widget.AppBarLayout>
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-
         <include layout="@layout/content_overview" style="@style/MenuButton" />
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="500dp">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="My Concerts"
-                android:id="@+id/textView2"
-                android:layout_alignParentTop="true"
-                android:layout_centerHorizontal="true"
-                android:layout_marginTop="105dp" />
-        </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/grad1"
+                    android:weightSum="1"
+                    android:id="@+id/relativeLayout">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="My Concerts"
+                        android:id="@+id/txtMyConcerts"
+                        android:layout_centerVertical="true"
+                        android:layout_centerHorizontal="true" />
+
+                </RelativeLayout>
+
+                <ListView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/listMyConcerts"
+                    android:layout_below="@+id/relativeLayout"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+                <TextView
+                    android:layout_width="230dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:visibility="invisible"
+                    android:gravity="center"
+                    android:textSize="25dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="You're not going to any concerts at the moment!"
+                    android:id="@+id/txtNoMyConcerts"
+                    android:layout_below="@+id/arrow" />
+
+            </RelativeLayout>
     </RelativeLayout>
 
 

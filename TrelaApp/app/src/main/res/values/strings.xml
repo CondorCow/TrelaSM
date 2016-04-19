@@ -5,4 +5,11 @@
     <string name="title_activity_artists">ArtistsActivity</string>
     <string name="title_activity_my_concerts">MyConcertsActivity</string>
     <string name="title_activity_settings">SettingsActivity</string>
+    <string name="title_activity_add_artists">AddArtistsActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="title_activity_add_artist">AddArtistActivity</string>
+    <string name="title_activity_edit_distance">EditDistanceActivity</string>
+    <string name="title_activity_concert_info">ConcertInfoActivity</string>
 </resources>
